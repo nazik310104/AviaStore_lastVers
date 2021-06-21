@@ -1,0 +1,126 @@
+.decor {
+  position: relative;
+  max-width: 400px;
+  margin: 0px auto 50px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px -1px 12px 5px rgba(0, 0, 0, 0.57);
+}
+.formleftdecoration,
+.formrightdecoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-image: linear-gradient(
+    65.9deg,
+    rgba(85, 228, 224, 1) 5.5%,
+    rgba(75, 68, 224, 0.74) 54.2%,
+    rgba(64, 198, 238, 1) 55.2%,
+    rgba(177, 36, 224, 1) 98.4%
+  );
+  border-radius: 20px;
+}
+.formleftdecoration {
+  bottom: 60px;
+  left: -30px;
+}
+.formrightdecoration {
+  top: 60px;
+  right: -30px;
+}
+.formleftdecoration:before,
+.formleftdecoration:after,
+.formrightdecoration:before,
+.formrightdecoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.formleftdecoration:before {
+  top: -20px;
+}
+.formleftdecoration:after {
+  top: 20px;
+  left: 10px;
+}
+.formrightdecoration:before {
+  top: -20px;
+  right: 0;
+}
+.formrightdecoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.forminner {
+  padding: 50px;
+}
+.forminner input,
+.forminner select,
+.forminner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #e9eff6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.forminner input[type="submit"] {
+  margin-top: 30px;
+  background-image: linear-gradient(
+    65.9deg,
+    rgba(85, 228, 224, 1) 5.5%,
+    rgba(75, 68, 224, 0.74) 54.2%,
+    rgba(64, 198, 238, 1) 55.2%,
+    rgba(177, 36, 224, 1) 98.4%
+  );
+  border-bottom: 4px solid
+    linear-gradient(
+      65.9deg,
+      rgba(85, 228, 224, 1) 5.5%,
+      rgba(75, 68, 224, 0.74) 54.2%,
+      rgba(64, 198, 238, 1) 55.2%,
+      rgba(177, 36, 224, 1) 98.4%
+    );
+  color: white;
+  font-size: 14px;
+}
+.forminner textarea {
+  resize: none;
+}
+.forminner h3 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #005a8d;
+}
+.forminner select {
+  height: 50px;
+  font-size: 16px;
+  color: #005a8d;
+}
+.forminner select option {
+  font-size: 16px;
+  color: #005a8d;
+}
+.forminner label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #005a8d;
+}
